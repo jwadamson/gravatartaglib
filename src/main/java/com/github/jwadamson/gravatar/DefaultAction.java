@@ -1,7 +1,7 @@
 /**
  *
  */
-package com.github.jwadamson.web.gravatar;
+package com.github.jwadamson.gravatar;
 
 import org.apache.commons.lang.StringUtils;
 

@@ -1,4 +1,4 @@
-package com.github.jwadamson.web.gravatar;
+package com.github.jwadamson.gravatar;
 
 // jsr311-api (and jersey server or other runtime delegate?)
 import java.net.URI;

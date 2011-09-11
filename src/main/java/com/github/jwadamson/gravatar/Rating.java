@@ -1,7 +1,7 @@
 /**
  *
  */
-package com.github.jwadamson.web.gravatar;
+package com.github.jwadamson.gravatar;
 
 public enum Rating {
 
