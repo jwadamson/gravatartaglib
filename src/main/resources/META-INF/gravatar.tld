@@ -4,52 +4,62 @@
     version="2.0">
   <uri>http://blah.com/gravatar</uri>
   <shortname>gravatar</shortname>
-  <description>Created to generate gravatar images and urls</description>
+  <description>Created to generate gravatar urls</description>
   <tlibversion>1.0</tlibversion>
 
   <tag>
     <name>url</name>
-    <tag-class>com.github.jwadamson.gravatar.GravatarUrlTag</tag-class>
+    <tag-class>com.github.jwadamson.gravatar.taglib.GravatarUrlTag</tag-class>
     <body-content>empty</body-content>
     <attribute>
       <name>var</name>
       <type>java.lang.String</type>
+      <required>false</required>
     </attribute>
     <attribute>
       <name>scope</name>
       <type>java.lang.String</type>
+      <required>false</required>
     </attribute>
     <attribute>
       <name>email</name>
       <type>java.lang.String</type>
+      <required>true</required>
     </attribute>
     <attribute>
       <name>defaultAction</name>
       <type>java.lang.String</type>
+      <required>false</required>
     </attribute>
     <attribute>
       <name>defaultUri</name>
       <type>java.lang.String</type>
+      <required>false</required>
     </attribute>
     <attribute>
       <name>extension</name>
       <type>java.lang.String</type>
+      <required>false</required>
     </attribute>
     <attribute>
       <name>forceDefault</name>
-      <type>java.lang.Boolean</type>
+      <type>boolean</type>
+      <required>false</required>
     </attribute>
     <attribute>
       <name>rating</name>
       <type>java.lang.String</type>
+      <required>false</required>
     </attribute>
     <attribute>
       <name>secure</name>
-      <type>java.lang.Boolean</type>
+      <type>boolean</type>
+      <required>false</required>
     </attribute>
     <attribute>
       <name>size</name>
-      <type>java.lang.Integer</type>
+      <type>integer</type>
+      <required>false</required>
     </attribute>
   </tag>
 </taglib>
