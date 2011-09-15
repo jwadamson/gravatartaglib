@@ -10,6 +10,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 // apache commons lang
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.Validate;
 
 
 public class GravatarUriBuilder implements Cloneable {
@@ -17,6 +18,8 @@ public class GravatarUriBuilder implements Cloneable {
     //*****************************************************************************
     // CLASS
     //*****************************************************************************
+
+    static public final String GRAVATAR_URI_BASE = "http://www.gravatar.com/avatar/";
 
     //*****************************************************************************
     // INSTANCE
@@ -131,7 +134,9 @@ public class GravatarUriBuilder implements Cloneable {
      * @return the Uri for the current state of the GravatarUriBuilder
      */
     public URI build() {
-        UriBuilder b = UriBuilder.fromUri("http://www.gravatar.com/avatar/");
+        Validate.notEmpty(email, "An email address must be specified");
+
+        UriBuilder b = UriBuilder.fromUri(GRAVATAR_URI_BASE);
 
         if (secure) {
             b.scheme("https");
@@ -178,7 +183,7 @@ public class GravatarUriBuilder implements Cloneable {
     }
 
     /**
-     * Create a copy of the GravatarUriBuilder preserving its state
+     * Create a copy of the GravatarUriBuilder preserving its current state
      * @return a clone of this instance.
      */
     @Override
