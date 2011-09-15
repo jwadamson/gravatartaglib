@@ -1,4 +1,4 @@
-package com.github.jwadamson.gravatar;
+package com.github.jwadamson.gravatar.taglib;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -9,6 +9,10 @@ import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.TagSupport;
 
 import org.apache.taglibs.standard.tag.common.core.Util;
+
+import com.github.jwadamson.gravatar.DefaultAction;
+import com.github.jwadamson.gravatar.GravatarUriBuilder;
+import com.github.jwadamson.gravatar.Rating;
 
 public class GravatarUrlTag extends TagSupport {
 
