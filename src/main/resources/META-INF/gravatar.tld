@@ -7,14 +7,49 @@
   <description>Created to generate gravatar images and urls</description>
   <tlibversion>1.0</tlibversion>
 
-  <function>
+  <tag>
     <name>url</name>
-    <function-class>com.example.Helper</function-class>
-    <function-signature>boolean XXX(java.lang.String, java.lang.String)<function-signature>
-  </function>
-
-  <tag-file>
-    <name>img</name>
-    <path>/META-INF/tags/gravatar-img.tag</path>
-  </tag-file>
+    <tag-class>com.github.jwadamson.gravatar.GravatarUrlTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <name>var</name>
+      <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+      <name>scope</name>
+      <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+      <name>email</name>
+      <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+      <name>defaultAction</name>
+      <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+      <name>defaultUri</name>
+      <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+      <name>extension</name>
+      <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+      <name>forceDefault</name>
+      <type>java.lang.Boolean</type>
+    </attribute>
+    <attribute>
+      <name>rating</name>
+      <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+      <name>secure</name>
+      <type>java.lang.Boolean</type>
+    </attribute>
+    <attribute>
+      <name>size</name>
+      <type>java.lang.Integer</type>
+    </attribute>
+  </tag>
 </taglib>
