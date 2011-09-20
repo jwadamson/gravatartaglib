@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<taglib xmlns="https://java.sun.com/xml/js/j2ee" 
-    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" 
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
     version="2.0">
-  <uri>http://blah.com/gravatar</uri>
-  <shortname>gravatar</shortname>
-  <description>Created to generate gravatar urls</description>
   <tlibversion>1.0</tlibversion>
+  <shortname>gravatar</shortname>
+  <uri>http://jwadamson.github.com/gravatar</uri>
+  <description>Created to generate gravatar urls</description>
 
   <tag>
     <name>url</name>
