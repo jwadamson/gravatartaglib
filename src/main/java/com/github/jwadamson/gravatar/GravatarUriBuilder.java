@@ -151,10 +151,6 @@ public class GravatarUriBuilder implements Cloneable {
             b.host("secure.gravatar.com");
         }
 
-        if (StringUtils.isEmpty(email)) {
-            throw new IllegalStateException("Email address must be supplied");
-        }
-
         String hash = DigestUtils.md5Hex(email.toLowerCase().trim());
         if (StringUtils.isNotEmpty(extension)) {
             hash += "." + extension;
