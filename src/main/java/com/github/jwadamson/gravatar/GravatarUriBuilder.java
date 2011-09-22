@@ -12,7 +12,6 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.Validate;
 
-
 public class GravatarUriBuilder implements Cloneable {
 
     //*****************************************************************************
@@ -76,7 +75,6 @@ public class GravatarUriBuilder implements Cloneable {
         return this;
     }
 
-
     /**
      * Use a http secure url.
      * @return the updated GravatarUriBuilder instance
@@ -131,7 +129,7 @@ public class GravatarUriBuilder implements Cloneable {
 
     /**
      * Build the URI
-     * @return the Uri for the current state of the GravatarUriBuilder
+     * @return the URI for the current state of the GravatarUriBuilder
      */
     public URI build() {
         Validate.notEmpty(email, "An email address must be specified");
@@ -173,7 +171,7 @@ public class GravatarUriBuilder implements Cloneable {
             b.queryParam("rating", rating);
         }
         if (size != null) {
-            if ( size < 1 || 500 < size) {
+            if (size < 1 || 500 < size) {
                 throw new IllegalStateException("Image size must be between 1 and 500");
             }
             b.queryParam("size", size);
