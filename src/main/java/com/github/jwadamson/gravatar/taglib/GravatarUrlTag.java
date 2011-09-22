@@ -66,7 +66,7 @@ public class GravatarUrlTag extends TagSupport {
     }
 
     public void setExtension(String extension) {
-        uriBuilder.extension(null);
+        uriBuilder.extension(extension);
     }
 
     public void setForceDefault(Boolean forceDefault) {
