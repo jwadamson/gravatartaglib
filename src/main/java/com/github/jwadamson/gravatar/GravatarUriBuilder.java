@@ -25,8 +25,8 @@ public class GravatarUriBuilder implements Cloneable {
     // INSTANCE
     //*****************************************************************************
 
-    private String email;
-    private String extension;
+    private String email = null;
+    private String extension = null;
     private DefaultAction defaultAction = null;
     private URI defaultUri = null;
     private boolean secure = false;
