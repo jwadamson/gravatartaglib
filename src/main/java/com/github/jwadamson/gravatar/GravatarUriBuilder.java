@@ -132,6 +132,16 @@ public class GravatarUriBuilder implements Cloneable {
      * @return the URI for the current state of the GravatarUriBuilder
      */
     public URI build() {
+        return build(this.email);
+    }
+
+    /**
+     * Build the URI using the given email
+     * @param email an email address to override the current email state
+     * @return the URI for the current state of the GravatarUriBuilder for the given email
+     * @see #email(String)
+     */
+    public URI build(String email) {
         Validate.notEmpty(email, "An email address must be specified");
 
         UriBuilder b = UriBuilder.fromUri(GRAVATAR_URI_BASE);
